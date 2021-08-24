@@ -510,18 +510,21 @@
 		// 3. This function creates an <iframe> (and YouTube player)
 		//    after the API code downloads.
 		var player;
-		const videoId = 'wDM4yi8eWAg';
+		const videoId = 'eMyGLm8KX8g';
+		const start = 11;
+		const end = 29;
 
 		function onYouTubeIframeAPIReady() {
 			player = new YT.Player('player', {
 				videoId: videoId,
 				playerVars: {
+					'modestbranding': 1,
 					'controls': 0,
 					'autoplay': 1,
-					'playlist': videoId,
-					'loop': 1,
 					'rel': 0,
 					'vq': 'hd1080',
+					start,
+					end
 				},
 				events: {
 					'onReady': onPlayerReady,
@@ -546,6 +549,10 @@
 				document.body.classList.add('load_finish');
 				document.body.style.removeProperty('overflow');
 				done = true;
+			}
+
+			if (event.data == YT.PlayerState.ENDED) {
+				event.target.seekTo(start)
 			}
 		}
 	</script>
