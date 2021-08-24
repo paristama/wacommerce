@@ -44,11 +44,6 @@ async function immediateLoadEventListener() {
 
 async function initialFunc() {
 
-	setTimeout(() => {
-		document.body.classList.add('load_finish');
-		document.body.style.removeProperty('overflow');
-	}, 1500);
-
 	/**
 	* @type {Array}
 	*/

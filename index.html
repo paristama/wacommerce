@@ -26,8 +26,13 @@
 
 	<!-- Loader -->
 	<div class="loader1">
-		<div class="spinner-border text-white loader-icon" role="status">
-			<span class="visually-hidden">Loading...</span>
+		<div class="loader-icon">
+			<!-- <div class="spinner-border text-white" role="status">
+				<span class="visually-hidden">Loading...</span>
+			</div> -->
+			<div class="spinner">
+				<img class="spinner-icon" src="images/spin-icon.svg" alt="loader">
+			</div>
 		</div>
 	</div>
 	<div class="loader2"></div>
@@ -125,7 +130,6 @@
 
 	<!-- Header Carousel -->
 	<div class="bg-yt carousel-wrapper">
-
 		<div class="bg-yt__wrapper">
 			<div id="player"></div>
 			<!-- <iframe
@@ -134,10 +138,10 @@
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 				allowfullscreen>
 			</iframe> -->
-			<iframe class="yt-desktop"
+			<!-- <iframe class="yt-desktop"
 				src="https://www.youtube.com/embed/XUSP8hhrIi8?start=11&end=72&vq=hd1080&autoplay=1&loop=1&playlist=XUSP8hhrIi8&modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&fs=0&color=white&controls=0&disablekb=1&mute=1"
 				frameborder="0">
-			</iframe>
+			</iframe> -->
 		</div>
 		<div class="banner-caption">
 			<div class="caption-text mb-3 mb-md-4">
@@ -495,6 +499,7 @@
 
 
 	<script>
+
 		// 2. This code loads the IFrame Player API code asynchronously.
 		var tag = document.createElement('script');
 
@@ -505,17 +510,23 @@
 		// 3. This function creates an <iframe> (and YouTube player)
 		//    after the API code downloads.
 		var player;
+		const videoId = 'wDM4yi8eWAg';
+
 		function onYouTubeIframeAPIReady() {
 			player = new YT.Player('player', {
-				videoId: 'XUSP8hhrIi8',
+				videoId: videoId,
 				playerVars: {
+					'controls': 0,
 					'autoplay': 1,
-					'playsinline': 1,
-					'playlist': 'XUSP8hhrIi8',
-					'loop': 1
+					'playlist': videoId,
+					'loop': 1,
+					'rel': 0,
+					'vq': 'hd1080',
 				},
 				events: {
-					'onReady': onPlayerReady
+					'onReady': onPlayerReady,
+					'onPlaybackQualityChange': 'hd1080',
+					'onStateChange': onPlayerStateChange
 				}
 			});
 		}
@@ -524,6 +535,18 @@
 		function onPlayerReady(event) {
 			event.target.mute();
 			event.target.playVideo();
+		}
+
+		// 5. The API calls this function when the player's state changes.
+		//    The function indicates that when playing a video (state=1),
+		//	  The loader UI should stop when video start to play.
+		var done = false;
+		function onPlayerStateChange(event) {
+			if (event.data == YT.PlayerState.PLAYING) {
+				document.body.classList.add('load_finish');
+				document.body.style.removeProperty('overflow');
+				done = true;
+			}
 		}
 	</script>
 
