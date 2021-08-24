@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" href="images/favicon.ico">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+	<!-- Owl CSS -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css" />
+	<link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="css/style.css" />
+
+	<title>BEKATE | Official Store</title>
+</head>
+
+<body style="overflow: hidden;">
+
+	<!-- Loader -->
+	<div class="loader1">
+		<div class="spinner-border text-white loader-icon" role="status">
+			<span class="visually-hidden">Loading...</span>
+		</div>
+	</div>
+	<div class="loader2"></div>
+
+
+	<!-- Navbar -->
+	<header>
+		<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+			<div class="container flex-wrap justify-content-center">
+				<div class="nav-wrapper w-100 d-flex align-items-center position-relative">
+					<button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="strip-icon"></span>
+						<span class="strip-icon"></span>
+						<span class="strip-icon"></span>
+					</button>
+					<a href="/" class="navbar-brand mx-auto">BEKATE</a>
+					<!-- Offcanvas Navbar -->
+					<div class="offcanvas offcanvas-start offcanvas-nav" tabindex="-1" id="offcanvasNavbar"
+						aria-labelledby="offcanvasNavbarLabel">
+						<div class="offcanvas-header d-lg-none">
+							<span class="offcanvas-title navbar-brand" id="offcanvasNavbarLabel">BEKATE</span>
+							<button type="button" class="btn text-reset p-0" data-bs-dismiss="offcanvas"
+								aria-label="Close">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+									class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+									<path fill-rule="evenodd"
+										d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+								</svg>
+							</button>
+						</div>
+						<div class="offcanvas-body overflow-visible">
+							<ul class="navbar-nav justify-content-center text-uppercase">
+								<li class="nav-item">
+									<a href="javascript:void(0)" class="nav-link active">Sale</a>
+								</li>
+								<li class="nav-item">
+									<a href="javascript:void(0)" class="nav-link">Collections</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a href="javascript:void(0)" class="nav-link" id="navbarDropdownMenuLink"
+										role="button" data-bs-toggle="dropdown" aria-expanded="false">Category
+									</a>
+									<ul class="dropdown-menu border-top-0" aria-labelledby="navbarDropdownMenuLink">
+										<li><a href="javascript:void(0)" class="dropdown-item">All</a></li>
+										<li><a href="javascript:void(0)" class="dropdown-item">Top</a></li>
+										<li><a href="javascript:void(0)" class="dropdown-item">Bottom</a></li>
+										<li><a href="javascript:void(0)" class="dropdown-item">Dress</a></li>
+										<li><a href="javascript:void(0)" class="dropdown-item">Shoes</a></li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a href="javascript:void(0)" class="nav-link">FAQ</a>
+								</li>
+								<li class="nav-item">
+									<a href="javascript:void(0)" class="nav-link">Contact</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<a href="#offcanvasCart" class="text-decoration-none lh-1 order-lg-1 cart-icon"
+						data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasCart">
+						<span class="cart-text text-uppercase d-none d-md-block"></span>
+						<div class="d-md-none">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+								class="bi bi-bag" viewBox="0 0 16 16">
+								<path
+									d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+							</svg>
+							<sup></sup>
+						</div>
+					</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- Navbar end -->
+
+	<!-- Offcanvas Cart -->
+	<div class="offcanvas offcanvas-end offcanvas-cart" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+		<div class="offcanvas-header">
+			<button type="button" class="btn p-0 text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+					class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+					<path fill-rule="evenodd"
+						d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+				</svg>
+			</button>
+			<h5 class="offcanvas-title fw-600 text-uppercase ls-1" id="offcanvasCartLabel">My Cart</h5>
+		</div>
+		<div class="offcanvas-body" id="offcanvasCartBody"></div>
+		<div class="offcanvas-footer border-top" id="offcanvasCartFooter"></div>
+	</div>
+
+	<!-- Header Carousel -->
+	<div class="bg-yt carousel-wrapper">
+
+		<div class="bg-yt__wrapper">
+			<div id="player"></div>
+			<!-- <iframe
+				src="https://www.youtube.com/embed/4w5qtV8Iyk8?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=4w5qtV8Iyk8&mute=1"
+				title="YouTube video player" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen>
+			</iframe> -->
+			<iframe class="yt-desktop"
+				src="https://www.youtube.com/embed/XUSP8hhrIi8?start=11&end=72&vq=hd1080&autoplay=1&loop=1&playlist=XUSP8hhrIi8&modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&fs=0&color=white&controls=0&disablekb=1&mute=1"
+				frameborder="0">
+			</iframe>
+		</div>
+		<div class="banner-caption">
+			<div class="caption-text mb-3 mb-md-4">
+				<p>Mid Season <span>Sale</span></p>
+				<p>Up to 30% on selected items</p>
+			</div>
+			<div class="caption-btn text-center">
+				<a href="javascript:void(0)" class="btn btn-outline-light btn-cta" id="ctaBtn">Shop Now</a>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="carousel-wrapper position-relative">
+		<div id="carouselBanner" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active"></div>
+				<div class="carousel-item"></div>
+				<div class="carousel-item"></div>
+			</div>
+			<button class="carousel-control-prev d-none d-md-flex" type="button" data-bs-target="#carouselBanner"
+				data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next d-none d-md-flex" type="button" data-bs-target="#carouselBanner"
+				data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+		<div class="banner-caption">
+			<div class="caption-text mb-3 mb-md-4">
+				<p>Mid Season <span>Sale</span></p>
+				<p>Up to 30% on selected items</p>
+			</div>
+			<div class="caption-btn text-center">
+				<a href="javascript:void(0)" class="btn btn-outline-light btn-cta" id="ctaBtn">Shop Now</a>
+			</div>
+		</div>
+	</div> -->
+	<!-- Header Carousel end -->
+
+	<!-- Sale -->
+	<section class="section-featured mt-2 mt-md-5 pt-md-2" id="sale">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-3">
+					<div class="section-featured__heading my-4 text-center">
+						<h2 class="text-uppercase text-center ls-1 mb-1 mb-md-2" id="featuredProductsHeading">
+							On Sale
+						</h2>
+						<h3 class="badge bg-dark rounded-0 fw-300 ls-1">Up to 30% Off</h3>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="section-featured__content">
+						<div class="owl-carousel owl-theme" id="owlWrapper"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Sale end -->
+
+	<!-- Collections -->
+	<section class="section-collections pt-1 mt-3" id="collections">
+		<div class="container">
+			<div class="section-collections__heading my-4">
+				<div class="row">
+					<h2 class="text-uppercase text-center ls-1">Collections</h2>
+					<h5 class="text-center ls-1 category-info">All Products</h5>
+				</div>
+			</div>
+			<div class="section-collections__content">
+				<div class="row all-products-wrapper" id="collectionsWrapper"></div>
+			</div>
+		</div>
+	</section>
+	<!-- Collections end -->
+
+	<!-- FAQ -->
+	<section class="section-faq" id="faq">
+		<div class="container">
+			<div class="row">
+				<div class="section-faq__heading text-center">
+					<h2 class="text-uppercase ls-1 d-md-none">FAQ</h2>
+					<h2 class="text-uppercase ls-1 d-none d-md-block">Frequently Asked Questions</h2>
+				</div>
+				<div class="section-faq__content">
+					<div class="row justify-content-center">
+						<div class="col-lg-10 col-xl-6">
+							<div class="faq-item">
+								<div class="faq-btn-wrapper">
+									<button class="btn-collapse faq-heading" type="button" data-bs-toggle="collapse"
+										data-bs-target="#faqItem1" aria-expanded="false" aria-controls="faqItem1">
+										Bagaimana cara melakukan pemesanan?
+									</button>
+								</div>
+								<div class="collapse show" id="faqItem1">
+									<div class="card card-body border-0 faq-content">
+										<div>
+											<ol class="ps-3">
+												<li>Pilih produk, ukuran dan jumlah, lalu klik Add To Cart</li>
+												<li>Pada tampilan cart klik Checkout.</li>
+												<li>Periksa detail pesanan dan isi data penerima lalu klik Send Form
+												</li>
+												<li>Anda akan dialihkan ke aplikasi WhatsApp dengan format pesan
+													otomatis.
+												</li>
+												<li>Selanjutnya anda hanya perlu mengirim pesan dan mohon menunggu Admin
+													kami merespon</li>
+											</ol>
+											<span class="faq-item-note text-muted">Sebelum melakukan pemesanan
+												pastikan
+												perangkat
+												yang anda
+												gunakan telah login pada aplikasi WhatsApp atau WhatsApp Web</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="faq-item">
+								<div class="faq-btn-wrapper">
+									<button class="btn-collapse faq-heading collapsed" type="button"
+										data-bs-toggle="collapse" data-bs-target="#faqItem2" aria-expanded="false"
+										aria-controls="faqItem2">
+										Metode pembayaran apa yang tersedia?
+									</button>
+								</div>
+								<div class="collapse" id="faqItem2">
+									<div class="card card-body border-0 faq-content">
+										<div>
+											Pembayaran saat ini hanya dapat dilakukan melalui transfer ke rekening
+											<strong>Bank Nusa
+												Mandiri</strong>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="faq-item">
+								<div class="faq-btn-wrapper">
+									<button class="btn-collapse faq-heading collapsed" type="button"
+										data-bs-toggle="collapse" data-bs-target="#faqItem3" aria-expanded="false"
+										aria-controls="faqItem3">
+										Apakah bisa COD?
+									</button>
+								</div>
+								<div class="collapse" id="faqItem3">
+									<div class="card card-body border-0 faq-content">
+										<div><strong>Tidak</strong>. Sehubungan dengan maraknya kejadian viral COD yang
+											terjadi belakangan ini, maka sistem COD kami tiadakan.
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="faq-item">
+								<div class="faq-btn-wrapper">
+									<button class="btn-collapse faq-heading collapsed" type="button"
+										data-bs-toggle="collapse" data-bs-target="#faqItem4" aria-expanded="false"
+										aria-controls="faqItem4">
+										Apakah boleh melakukan return?
+									</button>
+								</div>
+								<div class="collapse" id="faqItem4">
+									<div class="card card-body border-0 faq-content">
+										<div><strong>Ya</strong>. Apabila terdapat kerusakan atau kesalahan pengiriman
+											dari kami. Untuk tata cara melakukan return customer dapat menghubungi
+											kami melalui WhatsApp.
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="faq-item">
+								<div class="faq-btn-wrapper">
+									<button class="btn-collapse faq-heading collapsed" type="button"
+										data-bs-toggle="collapse" data-bs-target="#faqItem5" aria-expanded="false"
+										aria-controls="faqItem5">
+										Apakah bisa kredit?
+									</button>
+								</div>
+								<div class="collapse" id="faqItem5">
+									<div class="card card-body border-0 faq-content">
+										<div>
+											Tidak
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- FAQ end -->
+
+	<!-- Footer -->
+	<footer class="section-footer">
+		<div class="footer-banner-wrapper" id="contact">
+			<div class="py-5 footer-banner"></div>
+		</div>
+		<div class="container">
+			<div class="row justify-content-center">
+				<h2 class="text-uppercase mb-5 text-md-center">Contact</h2>
+				<div class="col-md-6">
+					<div class="contact">
+						<ul class="list-inline">
+							<li>BKT SHOPPING AVENUE</li>
+							<li>Jl. Boulevard Kanal Timur No.13</li>
+							<li>Jakarta, Indonesia</li>
+							<li>+6281366613666</li>
+							<li>customer@bekate.com</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h5 class="mb-0 mb-md-2 mt-4 mt-md-0 ls-1 text-center text-lg-end text-uppercase">Follow Us</h5>
+					<ul class="list-group list-group-horizontal flex-md-column text-center text-lg-end">
+						<li class="list-group-item p-md-0">
+							<a href="https://www.instagram.com/nusamandiri" class="social-link">
+								<i class="bi bi-instagram d-md-none"></i>
+								<span class="d-none d-md-inline">Instagram</span>
+							</a>
+						</li>
+						<li class="list-group-item p-md-0">
+							<a href="https://www.facebook.com/Nusa-Mandiri-456364881230116/" class="social-link">
+								<i class="bi bi-facebook d-md-none"></i>
+								<span class="d-none d-md-inline">Facebook</span>
+							</a>
+						</li>
+						<li class="list-group-item p-md-0">
+							<a href="https://twitter.com/_nusamandiri" class="social-link">
+								<i class="bi bi-twitter d-md-none"></i>
+								<span class="d-none d-md-inline">Twitter</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-12 copyright">
+					<p class="text-center text-uppercase copyright-text">
+						Copyright <sup>&copy;</sup> 2021 Bekate
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer end -->
+
+	<!-- Modal -->
+	<div class="modal fade" id="detailModal" tabindex="0" aria-labelledby="detailModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg"></div>
+	</div>
+	<div class="modal fade" id="formModal" aria-hidden="true" aria-labelledby="formModalLabel" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title text-uppercase" id="formModalLabel">Form Order</h3>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="card">
+						<div class="row">
+							<div class="col-md-6 order-1 order-md-0">
+								<div class="card-body col__order-detail">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="card-body">
+									<h5 class="pb-2 mb-2 mb-md-4 border-bottom border-1 ls-1">Data Penerima</h5>
+									<div class="data-wrapper">
+										<form class="form-data" action="" method="POST">
+											<div class="mb-2">
+												<label for="nama" class="form-label" id="labelNama">Nama</label>
+												<input type="text" class="form-control" id="nama" name="nama"
+													aria-describedby="namaHelp" placeholder="Nama Penerima"
+													data-prop="nama" />
+											</div>
+											<div class="mb-2">
+												<label for="alamat" class="form-label">Alamat</label>
+												<input type="text" class="form-control" id="alamat" name="alamat"
+													aria-describedby="alamatHelp" placeholder="Alamat Penerima"
+													data-prop="alamat" />
+											</div>
+											<div class="mb-2">
+												<label for="selectProvinsi" class="form-label">Provinsi</label>
+												<select class="form-select" aria-label="Default select example"
+													id="selectProvinsi" data-prop="prov">
+													<option value="Select Provinsi" selected>Select Provinsi</option>
+												</select>
+											</div>
+											<div class="mb-2">
+												<label for="selectKotaKab" class="form-label">Kota/Kab</label>
+												<select class="form-select" aria-label="Default select example"
+													id="selectKotaKab" data-prop="kotakab">
+													<option selected>Select Kota/Kab</option>
+												</select>
+											</div>
+											<div class="mb-2">
+												<label for="selectKecamatan" class="form-label">Kecamatan</label>
+												<select class="form-select" aria-label="Default select example"
+													id="selectKecamatan" data-prop="kec">
+													<option selected>Select Kecamatan</option>
+												</select>
+											</div>
+											<div class="mb-2">
+												<label for="selectKelurahan" class="form-label">Kelurahan</label>
+												<select class="form-select" aria-label="Default select example"
+													id="selectKelurahan" data-prop="kel">
+													<option selected>Select Kelurahan</option>
+												</select>
+												<label for="#kodePos" class="form-label" hidden>Kode Pos</label>
+												<input type="hidden" name="kodePos" id="kodePos" value=""
+													data-prop="pos" />
+											</div>
+											<div class="mb-3 mb-md-0 form-check">
+												<input type="checkbox" class="form-check-input" id="checkboxSave"
+													name="checkboxSave" data-prop="check">
+												<label class="form-check-label" for="checkboxSave">Simpan data
+													penerima</label>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 ms-auto order-2">
+								<div class="card-body">
+									<div class="d-grid gap-2">
+										<a href="javascript:void(0)" type="button" data-bs-dismiss="modal"
+											class="btn btn-dark btn-order rounded-0 py-2 font-secondary ls-1 text-uppercase"
+											target="_blank">Send
+											Form</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal end -->
+
+
+
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+		crossorigin="anonymous"></script>
+
+	<!-- Jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<!-- Owl JS -->
+	<script src="js/owl.carousel.min.js"></script>
+
+
+	<script>
+		// 2. This code loads the IFrame Player API code asynchronously.
+		var tag = document.createElement('script');
+
+		tag.src = "https://www.youtube.com/iframe_api";
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+		// 3. This function creates an <iframe> (and YouTube player)
+		//    after the API code downloads.
+		var player;
+		function onYouTubeIframeAPIReady() {
+			player = new YT.Player('player', {
+				videoId: 'XUSP8hhrIi8',
+				playerVars: {
+					'autoplay': 1,
+					'playsinline': 1,
+					'playlist': 'XUSP8hhrIi8',
+					'loop': 1
+				},
+				events: {
+					'onReady': onPlayerReady
+				}
+			});
+		}
+
+		// 4. The API will call this function when the video player is ready.
+		function onPlayerReady(event) {
+			event.target.mute();
+			event.target.playVideo();
+		}
+	</script>
+
+	<!-- Main JS -->
+	<script src="js/script.js"></script>
+</body>
+
+</html>

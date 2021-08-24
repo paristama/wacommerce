@@ -1,0 +1,552 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"title": "Sabine Top 1",
+			"price": 150000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui voluptates voluptas officia doloremque ab accusantium 1.",
+			"category": "top",
+			"imageUrl": "images/products/top-1.jpg",
+			"stock": {
+				"s": 0,
+				"m": 5,
+				"l": 7,
+				"xl": 3
+			},
+			"sold": 40
+		},
+		{
+			"id": 2,
+			"title": "Sabine Top 2",
+			"price": 150000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui voluptates voluptas officia doloremque ab accusantium 2.",
+			"category": "top",
+			"imageUrl": "images/products/top-2.jpg",
+			"stock": {
+				"s": 10,
+				"m": 5,
+				"l": 15,
+				"xl": 20
+			},
+			"sold": 37
+		},
+		{
+			"id": 3,
+			"title": "Sabine Top 3",
+			"price": 99000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui voluptates voluptas officia doloremque ab accusantium 3.",
+			"category": "top",
+			"imageUrl": "images/products/top-3.jpg",
+			"stock": {
+				"s": 0,
+				"m": 0,
+				"l": 0,
+				"xl": 0
+			},
+			"sold": 4
+		},
+		{
+			"id": 4,
+			"title": "Sabine Top 4",
+			"price": 150000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 4.",
+			"category": "top",
+			"imageUrl": "images/products/top-4.jpg",
+			"stock": {
+				"s": 10,
+				"m": 5,
+				"l": 15,
+				"xl": 20
+			},
+			"sold": 8
+		},
+		{
+			"id": 5,
+			"title": "Sabine Top 5",
+			"price": 150000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 5.",
+			"category": "top",
+			"imageUrl": "images/products/top-5.jpg",
+			"stock": {
+				"s": 10,
+				"m": 5,
+				"l": 15,
+				"xl": 20
+			},
+			"sold": 33
+		},
+		{
+			"id": 6,
+			"title": "Sabine Top 6",
+			"price": 150000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 6.",
+			"category": "top",
+			"imageUrl": "images/products/top-6.jpg",
+			"stock": {
+				"s": 10,
+				"m": 5,
+				"l": 15,
+				"xl": 20
+			},
+			"sold": 9
+		},
+		{
+			"id": 7,
+			"title": "Sabine Top 7",
+			"price": 99000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 7.",
+			"category": "top",
+			"imageUrl": "images/products/top-7.jpg",
+			"stock": {
+				"s": 10,
+				"m": 5,
+				"l": 15,
+				"xl": 20
+			},
+			"sold": 35
+		},
+		{
+			"id": 8,
+			"title": "Sabine Top 8",
+			"price": 299000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 8.",
+			"category": "top",
+			"imageUrl": "images/products/top-8.jpg",
+			"stock": {
+				"s": 10,
+				"m": 5,
+				"l": 15,
+				"xl": 20
+			},
+			"sold": 31
+		},
+		{
+			"id": 9,
+			"title": "Samika Dress 1",
+			"price": 255000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 9.",
+			"category": "dress",
+			"imageUrl": "images/products/dress-1.jpg",
+			"stock": {
+				"s": 10,
+				"m": 5,
+				"l": 15,
+				"xl": 0
+			},
+			"sold": 5
+		},
+		{
+			"id": 10,
+			"title": "Samika Dress 2",
+			"price": 99000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 10.",
+			"category": "dress",
+			"imageUrl": "images/products/dress-2.jpg",
+			"stock": {
+				"s": 10,
+				"m": 5,
+				"l": 15,
+				"xl": 20
+			},
+			"sold": 19
+		},
+		{
+			"id": 11,
+			"title": "Samika Dress 3",
+			"price": 99000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 11.",
+			"category": "dress",
+			"imageUrl": "images/products/dress-3.jpg",
+			"stock": {
+				"s": 10,
+				"m": 5,
+				"l": 15,
+				"xl": 20
+			},
+			"sold": 19
+		},
+		{
+			"id": 12,
+			"title": "Samika Dress 4",
+			"price": 255000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 12.",
+			"category": "dress",
+			"imageUrl": "images/products/dress-4.jpg",
+			"stock": {
+				"s": 10,
+				"m": 5,
+				"l": 15,
+				"xl": 20
+			},
+			"sold": 10
+		},
+		{
+			"id": 13,
+			"title": "Samika Dress 5",
+			"price": 99000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 13.",
+			"category": "dress",
+			"imageUrl": "images/products/dress-5.jpg",
+			"stock": {
+				"s": 10,
+				"m": 5,
+				"l": 15,
+				"xl": 20
+			},
+			"sold": 19
+		},
+		{
+			"id": 14,
+			"title": "Samika Dress 6",
+			"price": 290000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 14.",
+			"category": "dress",
+			"imageUrl": "images/products/dress-6.jpg",
+			"stock": {
+				"s": 10,
+				"m": 5,
+				"l": 15,
+				"xl": 20
+			},
+			"sold": 20
+		},
+		{
+			"id": 15,
+			"title": "Samika Dress 7",
+			"price": 99000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 15.",
+			"category": "dress",
+			"imageUrl": "images/products/dress-7.jpg",
+			"stock": {
+				"s": 0,
+				"m": 0,
+				"l": 0,
+				"xl": 0
+			},
+			"sold": 19
+		},
+		{
+			"id": 16,
+			"title": "Samika Pants 8",
+			"price": 290000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 16.",
+			"category": "dress",
+			"imageUrl": "images/products/dress-8.jpg",
+			"stock": {
+				"s": 10,
+				"m": 5,
+				"l": 15,
+				"xl": 20
+			},
+			"sold": 20
+		},
+		{
+			"id": 17,
+			"title": "Kylie Skirt 1",
+			"price": 195000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 17.",
+			"category": "skirt",
+			"imageUrl": "images/products/skirt-1.jpg",
+			"stock": {
+				"s": 10,
+				"m": 5,
+				"l": 15,
+				"xl": 20
+			},
+			"sold": 32
+		},
+		{
+			"id": 18,
+			"title": "Kylie Skirt 2",
+			"price": 195000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 18.",
+			"category": "skirt",
+			"imageUrl": "images/products/skirt-2.jpg",
+			"stock": {
+				"s": 10,
+				"m": 5,
+				"l": 15,
+				"xl": 20
+			},
+			"sold": 20
+		},
+		{
+			"id": 19,
+			"title": "Kylie Skirt 3",
+			"price": 355000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 19.",
+			"category": "skirt",
+			"imageUrl": "images/products/skirt-3.jpg",
+			"stock": {
+				"s": 0,
+				"m": 0,
+				"l": 0,
+				"xl": 0
+			},
+			"sold": 20
+		},
+		{
+			"id": 20,
+			"title": "Kylie Skirt 4",
+			"price": 355000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 20.",
+			"category": "skirt",
+			"imageUrl": "images/products/skirt-4.jpg",
+			"stock": {
+				"s": 10,
+				"m": 5,
+				"l": 15,
+				"xl": 20
+			},
+			"sold": 20
+		},
+		{
+			"id": 21,
+			"title": "Kylie Skirt 5",
+			"price": 355000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 21.",
+			"category": "skirt",
+			"imageUrl": "images/products/skirt-5.jpg",
+			"stock": {
+				"s": 10,
+				"m": 5,
+				"l": 15,
+				"xl": 20
+			},
+			"sold": 20
+		},
+		{
+			"id": 22,
+			"title": "Kylie Skirt 6",
+			"price": 355000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 22.",
+			"category": "skirt",
+			"imageUrl": "images/products/skirt-6.jpg",
+			"stock": {
+				"s": 10,
+				"m": 5,
+				"l": 15,
+				"xl": 20
+			},
+			"sold": 33
+		},
+		{
+			"id": 23,
+			"title": "Kylie Skirt 6",
+			"price": 355000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 23.",
+			"category": "skirt",
+			"imageUrl": "images/products/skirt-7.jpg",
+			"stock": {
+				"s": 10,
+				"m": 5,
+				"l": 15,
+				"xl": 20
+			},
+			"sold": 20
+		},
+		{
+			"id": 24,
+			"title": "Louie Pants 1",
+			"price": 355000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 23.",
+			"category": "pants",
+			"imageUrl": "images/products/pants-1.jpg",
+			"stock": {
+				"28": 10,
+				"30": 5,
+				"32": 15,
+				"34": 20
+			},
+			"sold": 20
+		},
+		{
+			"id": 25,
+			"title": "Louie Pants 2",
+			"price": 355000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 24.",
+			"category": "pants",
+			"imageUrl": "images/products/pants-2.jpg",
+			"stock": {
+				"28": 10,
+				"30": 5,
+				"32": 15,
+				"34": 20
+			},
+			"sold": 20
+		},
+		{
+			"id": 26,
+			"title": "Louie Pants 3",
+			"price": 355000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 24.",
+			"category": "pants",
+			"imageUrl": "images/products/pants-3.jpg",
+			"stock": {
+				"28": 10,
+				"30": 5,
+				"32": 15,
+				"34": 20
+			},
+			"sold": 20
+		},
+		{
+			"id": 27,
+			"title": "Louie Pants 4",
+			"price": 355000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 24.",
+			"category": "pants",
+			"imageUrl": "images/products/pants-4.jpg",
+			"stock": {
+				"28": 10,
+				"30": 5,
+				"32": 15,
+				"34": 20
+			},
+			"sold": 20
+		},
+		{
+			"id": 28,
+			"title": "Luna Short 1",
+			"price": 355000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 24.",
+			"category": "shorts",
+			"imageUrl": "images/products/shorts-1.jpg",
+			"stock": {
+				"28": 10,
+				"30": 5,
+				"32": 15,
+				"34": 20
+			},
+			"sold": 31
+		},
+		{
+			"id": 29,
+			"title": "Kendal Heels 1",
+			"price": 355000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 24.",
+			"category": "shoes",
+			"imageUrl": "images/products/shoes-1.jpg",
+			"stock": {
+				"38": 5,
+				"40": 5,
+				"41": 7,
+				"42": 3
+			},
+			"sold": 20
+		},
+		{
+			"id": 30,
+			"title": "Kendal Heels 2",
+			"price": 355000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 24.",
+			"category": "shoes",
+			"imageUrl": "images/products/shoes-2.jpg",
+			"stock": {
+				"38": 5,
+				"40": 5,
+				"41": 7,
+				"42": 3
+			},
+			"sold": 20
+		},
+		{
+			"id": 31,
+			"title": "Kendal Heels 3",
+			"price": 355000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 24.",
+			"category": "shoes",
+			"imageUrl": "images/products/shoes-3.jpg",
+			"stock": {
+				"38": 5,
+				"40": 5,
+				"41": 7,
+				"42": 3
+			},
+			"sold": 20
+		},
+		{
+			"id": 32,
+			"title": "Kendal Heels 4",
+			"price": 355000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 24.",
+			"category": "shoes",
+			"imageUrl": "images/products/shoes-4.jpg",
+			"stock": {
+				"38": 5,
+				"40": 5,
+				"41": 7,
+				"42": 3
+			},
+			"sold": 20
+		},
+		{
+			"id": 33,
+			"title": "Kendal Heels 5",
+			"price": 355000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 24.",
+			"category": "shoes",
+			"imageUrl": "images/products/shoes-5.jpg",
+			"stock": {
+				"38": 5,
+				"40": 5,
+				"41": 7,
+				"42": 3
+			},
+			"sold": 20
+		},
+		{
+			"id": 34,
+			"title": "Kendal Heels 6",
+			"price": 355000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 24.",
+			"category": "shoes",
+			"imageUrl": "images/products/shoes-6.jpg",
+			"stock": {
+				"38": 5,
+				"40": 5,
+				"41": 7,
+				"42": 3
+			},
+			"sold": 20
+		},
+		{
+			"id": 35,
+			"title": "Jenner Shoes 1",
+			"price": 355000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 24.",
+			"category": "shoes",
+			"imageUrl": "images/products/shoes-7.jpg",
+			"stock": {
+				"38": 5,
+				"40": 5,
+				"41": 7,
+				"42": 3
+			},
+			"sold": 36
+		},
+		{
+			"id": 36,
+			"title": "Jenner Shoes 2",
+			"price": 355000,
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatibus quo excepturi officiis, dolore aliquid consequatur nesciunt quis aut expedita unde dicta rem, architecto necessitatibus iusto assumenda dolorem qui 24.",
+			"category": "shoes",
+			"imageUrl": "images/products/shoes-8.jpg",
+			"stock": {
+				"38": 5,
+				"40": 5,
+				"41": 7,
+				"42": 3
+			},
+			"sold": 20
+		}
+	],
+	"sizecharts": {
+		"top": "images/sizecharts/top.svg",
+		"dress": "images/sizecharts/dress.svg",
+		"pants": "images/sizecharts/pants.svg",
+		"skirt": "images/sizecharts/skirt.svg",
+		"shorts": "images/sizecharts/shorts.svg",
+		"shoes": "images/sizecharts/shoes.svg"
+	}
+}
