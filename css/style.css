@@ -37,34 +37,78 @@ button {
 
 
 /** Loader */
-.loader1 {
+.loader {
 	position: fixed;
 	z-index: 9999;
 	width: 100%;
 	height: 100%;
-	transition: all .3s ease .5s;
+	transition: transform .3s ease;
 	transform-origin: right top;
-	/* transform: translate(-50%,-50%); */
 }
 
-.loader-icon {
+
+.loader-overlay {
+	position: fixed;
+	z-index: 9998;
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: #0c0c0c;
+	transition: opacity .7s ease, transform .3s ease;
+	transform-origin: right top;
+}
+
+.loader-wrapper {
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
+	width: 60%;
+	max-width: 600px;
 }
 
-.spinner {
-	-webkit-animation: spin 1s linear infinite;
-	-moz-animation: spin 1s linear infinite;
-	-ms-animation: spin 1s linear infinite;
-	-o-animation: spin 1s linear infinite;
-	animation: spin 1s linear infinite;
+.loader-wrapper path {
+	stroke:#fff;
+	fill: none;
+	stroke-dasharray: 1800;
+	opacity: 10;
+	animation: animate 2s cubic-bezier(0, 0.23, 1, .1);
+	stroke-width: 3;
+	stroke-miterlimit: 10;
 }
-.spinner-icon {
-	opacity: .6;
-	width: 4rem;
+
+
+.load_finish .loader{
+	transform: scaleX(0);
 }
+.load_finish .loader-overlay {
+	opacity: 0;
+	transform: scaleX(0);
+}
+
+
+@keyframes animate {
+	0% {
+		opacity: 0;
+		fill: none;
+		stroke-dashoffset: 1800;
+	}
+	30% {
+		opacity: 10;
+		fill: none;
+		stroke-dashoffset: 1800;
+	}
+	70% {
+		fill: rgba(255, 255, 255, 0);
+	}
+	100% {
+		opacity: 10;
+		fill: rgba(255, 255, 255, 1);
+		stroke-dashoffset: 0;
+	}
+}
+
+
 
 @keyframes spin {
 	0% {
@@ -107,28 +151,8 @@ button {
 	}
 }
 
-.loader2 {
-	position: fixed;
-	z-index: 9998;
-	display: block;
-	height: 100%;
-	width: 100%;
-	background: rgba(0,0,0,1);
-	transition: all .3s ease .5s;
-	transform-origin: right top;
-}
-
-.load_finish .loader1{
-	opacity: 0;
-}
-
-.load_finish .loader1,
-.load_finish .loader2 {
-	transform: scaleX(0);
-	display: none;
-}
-
 /** End Loader */
+
 
 
 .navbar {
@@ -270,7 +294,6 @@ button {
 	background-color: red;
 	height: 100vh;
 	width: 100%;
-	margin-bottom: 80px;
 	background-image: url('../images/yay.jpg');
 	background-size: cover;
 }
@@ -854,10 +877,6 @@ input:disabled {
 
 	body .carousel-wrapper .carousel-item.active ~ .navbar .nav-link{
 		color: red;
-	}
-
-	.spinner-icon {
-		width: 8rem;
 	}
 
 
