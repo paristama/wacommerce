@@ -67,7 +67,7 @@ button {
 	max-width: 600px;
 }
 
-.loader-wrapper path {
+/* .loader-wrapper path {
 	stroke:#fff;
 	fill: none;
 	stroke-dasharray: 1800;
@@ -75,7 +75,7 @@ button {
 	animation: animate 2s cubic-bezier(0, 0.23, 1, .1);
 	stroke-width: 3;
 	stroke-miterlimit: 10;
-}
+} */
 
 
 .load_finish .loader{
@@ -291,36 +291,15 @@ button {
 /** Youtube Header*/
 .bg-yt {
 	position: relative;
-	background-color: red;
-	height: 100vh;
-	width: 100%;
-	background-image: url('../images/yay.jpg');
-	background-size: cover;
 }
-
 
 .bg-yt__wrapper {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	/* padding-bottom: 56.25%; */
-	padding-top: 0;
+	position: relative;
+	height: 100vh;
 	overflow: hidden;
 	box-sizing: border-box;
+	background-color: #3a3a3a;
 }
-
-/* .bg-yt__wrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	pointer-events: none;
-	box-sizing: border-box;
-} */
-
 
 .bg-yt__wrapper iframe {
 	position: absolute;
@@ -331,12 +310,33 @@ button {
 	transform: translate(-50%, -50%);
 }
 
-.bg-yt__wrapper::after {
-	content: '';
-	background: rgba(0, 0, 0, .3);
-	height: 100%;
-	width: 100%;
+.bg-yt__cover {
 	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-image: url('../images/bg-hi.jpg');
+	background-size: cover;
+	background-position: center center;
+	transition: opacity 2s ease;
+}
+
+.animate {
+	animation: fadeInOut 1s ease;
+}
+
+.opacity-0 {
+	opacity: 0;
+}
+
+@keyframes fadeInOut{
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 
@@ -349,11 +349,35 @@ button {
 
 .carousel-wrapper .banner-caption {
 	position: absolute;
-	left: 50%;
-	bottom: 30%;
-	width: 80%;
-	transform: translateX(-50%);
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 0;
+	height: 100%;
+	width: 100%;
 }
+
+.banner-caption::before{
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color :rgba(0, 0, 0, .5);
+}
+
+.caption-wrapper{
+	top: calc(50% + 67px);
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	width: 80%;
+}
+
+
 
 .banner-caption .caption-text p {
 	color: #ffffff;

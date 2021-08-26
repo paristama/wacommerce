@@ -27,7 +27,10 @@
 	<!-- Loader -->
 	<div class="loader">
 		<div class="loader-wrapper">
-			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+			<object>
+				<embed src="images/loader.svg">
+			</object>
+			<!-- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
 				xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 946.6 232.5"
 				style="enable-background:new 0 0 946.6 232.5;" xml:space="preserve">
 				<style type="text/css">
@@ -75,7 +78,7 @@
 		c7.7,4.4,16.6,6.7,26.7,6.7c6.6,0,12.6-0.9,18-2.8c5.4-1.9,10-4.7,13.9-8.5c3.9-3.8,6.9-8.5,9.1-14.2l24.3,6.8
 		c-2.6,8.2-6.9,15.5-12.9,21.7c-6,6.2-13.5,11-22.4,14.5C894.7,226.8,884.7,228.6,873.6,228.6z" />
 				</g>
-			</svg>
+			</svg> -->
 		</div>
 	</div>
 	<div class="loader-overlay"></div>
@@ -171,31 +174,27 @@
 		<div class="offcanvas-footer border-top" id="offcanvasCartFooter"></div>
 	</div>
 
-	<!-- Header Carousel -->
+	<!--Header Video  -->
 	<div class="bg-yt carousel-wrapper">
 		<div class="bg-yt__wrapper">
-			<div id="player"></div>
-			<!-- <iframe
-				src="https://www.youtube.com/embed/4w5qtV8Iyk8?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=4w5qtV8Iyk8&mute=1"
-				title="YouTube video player" frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen>
-			</iframe> -->
-			<!-- <iframe class="yt-desktop"
-				src="https://www.youtube.com/embed/XUSP8hhrIi8?start=11&end=72&vq=hd1080&autoplay=1&loop=1&playlist=XUSP8hhrIi8&modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&fs=0&color=white&controls=0&disablekb=1&mute=1"
-				frameborder="0">
-			</iframe> -->
+			<div id="bg-yt__player"></div>
 		</div>
+		<div class="bg-yt__cover"></div>
 		<div class="banner-caption">
-			<div class="caption-text mb-3 mb-md-4">
-				<p>Mid Season <span>Sale</span></p>
-				<p>Up to 30% on selected items</p>
-			</div>
-			<div class="caption-btn text-center">
-				<a href="javascript:void(0)" class="btn btn-outline-light btn-cta" id="ctaBtn">Shop Now</a>
+			<div class="caption-wrapper">
+				<div class="caption-text mb-3 mb-md-4">
+					<p>Mid Season <span>Sale</span></p>
+					<p>Up to 30% on selected items</p>
+				</div>
+				<div class="caption-btn text-center">
+					<a href="javascript:void(0)" class="btn btn-outline-light btn-cta" id="ctaBtn">Shop Now</a>
+				</div>
 			</div>
 		</div>
 	</div>
+	<!-- End Header Video -->
+
+	<!-- Header Carousel -->
 	<!-- <div class="carousel-wrapper position-relative">
 		<div id="carouselBanner" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-inner">
@@ -553,12 +552,12 @@
 		// 3. This function creates an <iframe> (and YouTube player)
 		//    after the API code downloads.
 		var player;
-		const videoId = 'fmOEKOjyDxU';
-		const start = 12;
-		const end = 29;
+		const videoId = 'OODX2_pAc_Q';
+		const start = 9;
+		const end = 30;
 
 		function onYouTubeIframeAPIReady() {
-			player = new YT.Player('player', {
+			player = new YT.Player('bg-yt__player', {
 				videoId: videoId,
 				playerVars: {
 					'modestbranding': 1,
@@ -577,6 +576,7 @@
 			});
 		}
 
+
 		// 4. The API will call this function when the video player is ready.
 		function onPlayerReady(event) {
 			event.target.mute();
@@ -588,22 +588,45 @@
 						document.body.classList.add('load_finish');
 					}, 200);
 				});
-			}, 700);
+			}, 2000);
 		}
 
 		// 5. The API calls this function when the player's state changes.
 		//    The function indicates that when playing a video (state=1),
 		//	  The loader UI should stop when video start to play.
-		var isStart = false;
+		var isPlaying = false;
+		const transition = (end - start - 2) * 1000;
 		function onPlayerStateChange(event) {
-			// if (event.data == YT.PlayerState.PLAYING) {
-			// }
 
-			if (event.data == YT.PlayerState.ENDED) {
-				event.target.seekTo(start)
+			if (event.data == YT.PlayerState.PLAYING) {
+				if (!isPlaying) {
+					$('.bg-yt__cover').addClass('opacity-0');
+					isPlaying = true;
+				}
+
+				setTimeout(() => event.target.seekTo(start), transition);
 			}
+
+
 		}
+
 	</script>
+
+
+
+	<!-- <script>
+		$(window).on('load', () => {
+			setTimeout(() => {
+				$('.loader-wrapper').fadeOut(300, () => {
+					document.body.removeAttribute('style');
+					setTimeout(() => {
+						document.body.classList.add('load_finish');
+					}, 1000);
+				});
+			}, 500);
+		});
+	</script> -->
+
 
 	<!-- Main JS -->
 	<script src="js/script.js"></script>
